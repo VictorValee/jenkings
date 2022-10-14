@@ -1,0 +1,22 @@
+// mot clé encastrer instruction
+pipeline{
+    agent any
+    stages{
+        // etape de build
+        stage('Build'){
+            steps{
+                sh 'echo "Building"'
+            }
+        }
+        stage('Test'){
+            steps{
+                echo 'Testing'
+            }
+        }
+        stage('Deploy'){
+            steps{
+                echo 'Deploying'
+            }
+        }
+    }
+}
